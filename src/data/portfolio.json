@@ -1,0 +1,126 @@
+{
+  "personalInfo": {
+    "name": "Abdul Wasay Imran",
+    "title": "Computer Science Student @ IBA Karachi",
+    "headline": "Building Reliable Systems & Digital Architectures.",
+    "description": "CS student at IBA Karachi focused on systems programming, full-stack development, and applied AI. I like working close to the metal — from RISC-V assembly to serverless infrastructure.",
+    "location": "Karachi, Pakistan",
+    "email": "abdulwasay905@gmail.com",
+    "github": "https://github.com/awasay905",
+    "linkedin": "https://www.linkedin.com/in/abdul-wasay-imran/",
+    "website": "https://abdul-wasay-imran.vercel.app/", 
+    "image":"/abdul-wasay-photo.jpg"
+  },
+  "stats": [
+    {
+      "label": "3.86 CGPA",
+      "description": "Dean's List — BS Computer Science at IBA Karachi, 2022–2026. Focused on Systems, HCI, and Applied AI.",
+      "icon": "school"
+    },
+    {
+      "label": "Tech Stack",
+      "items": ["TypeScript", "Python", "Java", "C/C++", "React", "Node.js", "Go"],
+      "icon": "terminal"
+    },
+    {
+      "label": "Interests",
+      "quote": "Systems programming, applied AI, and building tools that solve real problems for real people.",
+      "icon": "favorite"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineering Intern",
+      "company": "10Pearls",
+      "period": "Jul 2025 — Mar 2026",
+      "location": "KARACHI, PAKISTAN",
+      "description": "Developed a production-grade platform migration tool with automated validation, rollback handling, and verification. Built AI automation using CrewAI and Gemini API with Python Playwright for iterative migration workflows. Implemented backward compatibility in Java/Perl backend services for seamless platform transitions."
+    },
+    {
+      "role": "Remote Software Development Intern",
+      "company": "Shopify Platform",
+      "period": "Jun 2025 — Nov 2025",
+      "location": "REMOTE",
+      "description": "Architected serverless infrastructure using Cloudflare Workers & Queues for high-volume webhook processing. Built full-stack merchant solutions with Gadget.dev, TypeScript, and Shopify Polaris integrating Payment API and custom checkout logic via GraphQL."
+    },
+    {
+      "role": "Teaching Assistant — Computer Systems",
+      "company": "IBA Karachi",
+      "period": "Jan 2025 — Dec 2025",
+      "location": "KARACHI, PAKISTAN",
+      "description": "Mentored students in Operating Systems and Computer Architecture & Assembly Language. Designed projects implementing network drivers, TCP protocols, SHA-256 hashing, and RISC-V vector programming. Led a Llama2 inference engine porting project for xv6 with multithreading support."
+    }
+  ],
+  "projects": [
+    {
+      "id": "agentic-pentesting",
+      "title": "Agentic AI Pentesting Framework",
+      "type": "Final Year Project",
+      "description": "Autonomous pentesting framework using LangGraph and a custom LLM to automate vulnerability discovery in containerized Linux environments.",
+      "tags": ["LangGraph", "Python", "Docker", "LLM"],
+      "image": "/projects/agentic-pentesting/cover.jpg",
+      "details": {
+        "challenge": "Manual penetration testing is time-consuming and requires deep expertise. The goal was to build an autonomous agent that could systematically discover vulnerabilities in containerized environments without human intervention for each step.",
+        "solution": "Built a multi-agent architecture using LangGraph with a custom LLM as the reasoning core. The framework runs compliance-focused agents on-host with improved coverage over manual approaches. Each agent specializes in a phase of the pentesting lifecycle.",
+        "role": "Lead Developer",
+        "duration": "Ongoing"
+      }
+    },
+    {
+      "id": "slm-xv6",
+      "title": "Small Language Model on xv6",
+      "type": "Systems Project",
+      "description": "SLM inference engine ported to the barebones xv6 OS with custom FPU support, a networking stack, and a reliable file transfer protocol — all built from scratch.",
+      "tags": ["C", "xv6", "Systems", "RISC-V"],
+      "image": "/projects/slm-xv6/cover.jpg",
+      "details": {
+        "challenge": "xv6 is a teaching OS with minimal hardware support and no floating-point, networking, or file transfer capabilities. Running a language model on it meant building all supporting infrastructure from scratch.",
+        "solution": "Implemented custom FPU support to enable floating-point inference, wrote a networking stack for data transfer, and designed a reliable file transfer protocol. The result is a functional SLM inference pipeline running on a barebones OS.",
+        "role": "Solo Developer",
+        "duration": "2 Months"
+      }
+    },
+    {
+      "id": "azad-bazaar",
+      "title": "Azad Bazaar",
+      "type": "HCI / Full-Stack",
+      "description": "WCAG-compliant cross-platform grocery delivery app with bi-directional RTL localization and voice search, optimized for visually impaired users.",
+      "tags": ["MERN", "CapacitorJS", "Accessibility", "TypeScript"],
+      "image": "/projects/azad-bazaar/cover.jpg",
+      "details": {
+        "challenge": "Existing grocery delivery apps in Pakistan lack accessibility features for visually impaired users and do not support Urdu RTL layouts. The challenge was building a WCAG-compliant experience without sacrificing usability for mainstream users.",
+        "solution": "Developed a MERN stack app with CapacitorJS for cross-platform deployment. Implemented bi-directional RTL localization, voice search, and used HCI analytics to iteratively improve the UI for accessibility.",
+        "role": "Full-Stack Developer",
+        "duration": "3 Months"
+      }
+    },
+    {
+      "id": "riscv-vector-lib",
+      "title": "Vectorized Algorithm Library",
+      "type": "Low-Level / Performance",
+      "description": "FFT, 2D-FFT, and matrix inversion in RISC-V vector assembly — achieving 20x speedup over scalar and 2x over Clang/GCC auto-vectorization.",
+      "tags": ["RISC-V", "Assembly", "SIMD", "Python"],
+      "image": "/projects/riscv-vector-lib/cover.jpg",
+      "details": {
+        "challenge": "Auto-vectorizing compilers leave significant performance on the table for compute-heavy algorithms like FFT. The goal was to hand-write RISC-V vector assembly that outperforms both scalar code and compiler-generated SIMD.",
+        "solution": "Implemented FFT, 2D-FFT, and matrix inversion using RISC-V vector instructions. Built a Python test framework for functional and performance validation. Achieved 20x over scalar and 2x over Clang/GCC on benchmark inputs.",
+        "role": "Solo Developer",
+        "duration": "6 Weeks"
+      }
+    },
+    {
+      "id": "commonapp-fsf",
+      "title": "CommonApp FSF",
+      "type": "Full-Stack",
+      "description": "Centralized university application platform for Pakistani students with multi-user workflows, PDF recommendations, and role-based access control — shipped to production.",
+      "tags": ["React", "TypeScript", "Node.js", "PostgreSQL", "Supabase"],
+      "image": "/projects/commonapp-fsf/cover.jpg",
+      "details": {
+        "challenge": "Pakistani students applying to universities lack a centralized platform. Each institution has its own process, making it hard for students, recommenders, and university admins to coordinate.",
+        "solution": "Led a team of 4 to build a full-stack platform with strongly-typed React/TypeScript frontend and Node.js/Express backend with PostgreSQL and Supabase Auth. Implemented multi-user workflows, PDF recommendations, email invitations, dynamic form generation, and RBAC. Deployed to production.",
+        "role": "Team Lead & Full-Stack Developer",
+        "duration": "4 Months"
+      }
+    }
+  ]
+}
